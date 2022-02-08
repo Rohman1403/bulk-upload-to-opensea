@@ -411,7 +411,7 @@ def main_program_loop():
             driver.switch_to.window(login_page)
             wait_css_selector("button[data-testid='request-signature__sign']")
             sign = driver.find_element_by_css_selector("button[data-testid='request-signature__sign']")
-            driver.execute_script("arguments[0].click();", sign)
+            sign.click()
             time.sleep(1)
 
   
